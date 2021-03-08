@@ -1,0 +1,32 @@
+@import "./variables";
+
+.seccion2_main_container {
+  padding: 5%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  background-color: $darkBlue;
+  
+}
+
+.logo-avion {
+  margin: auto;
+  text-align: center;
+  background: url(../assets/avioneta_143x49.png) no-repeat;
+  height: 50px;
+  width: 145px;
+}
+
+.seccion2_title {
+  color: $lightBlue;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.seccion2_subtitle {
+  color: $white;
+}
+
+.paragraph_2{
+  font: Ralway;
+  color: $white;
+}

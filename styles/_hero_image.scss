@@ -1,0 +1,77 @@
+@import "./variables";
+
+.hero-image {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  background: url(../assets/hero_manos.png) no-repeat center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.hero-logo {
+  background: url(../assets/lgo-hero_404x92.png) no-repeat;
+  display: block;
+  margin: auto;
+  margin-top: 3rem;
+  height: 100px;
+  width: 410px;
+  z-index: 3;
+}
+
+.hero-logo-mobile {
+  display: none;
+}
+
+.container-hero-image  {
+  position: absolute;
+  width: 50%;
+  overflow: hidden;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-heading {
+  font-size: 1.0rem;
+}
+
+.hero-subheading {
+  font-size: 1.0rem;
+}
+
+.btn-contact {
+  background-color: $lightBlue;
+  font-family: Raleway;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+    &:hover {
+      background-color: #141f48;
+    }
+}
+
+@media screen and (max-width: 650px) {
+  .hero-image {
+    height: 500px;
+    background: url(../assets/hero_manos.png) no-repeat center;
+    background-size: cover;
+  }
+  .container-hero-image  {
+    display: none;
+  }
+
+  .hero-logo-mobile {
+  background: url(../assets/lgo-hero_404x92.png) no-repeat;
+  display: block;
+  margin: auto;
+  margin-top: 3rem;
+  height: 100px;
+  width: 410px;
+  z-index: 3;
+
+  }
+}

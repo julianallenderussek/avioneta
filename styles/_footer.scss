@@ -1,0 +1,77 @@
+@import "./variables";
+
+
+.main-footer {
+  background: #141f48;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.main-footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main-footer__link {
+  display: block;
+  margin: 1rem 0;
+}
+
+.main-footer__link a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color: #ccc;
+}
+
+.instagram-icon {
+background: url(/assets/insta_36x36.png);
+width: 37px;
+height: 37px;
+}
+
+.facebook {
+  color: white;
+  margin: 3px
+}
+
+.twitter {
+  color: white;
+  height: 20px;
+  width: 20px;
+  margin: 3px
+}
+.instagram {
+    margin: 4px;
+    margin-left: 5px;
+}
+
+.column_paragraph {
+  font-size: 0.90rem;
+}
+
+.column_objectives {
+  font-size: 1.0rem;
+}
+
+.container_aviso {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.aviso_privacidad {
+  text-decoration: underline;
+  color: white;
+  font-size: 0.75rem;
+}
+
+.container_aviso p {
+  color: white;
+  font-size: 0.75rem;
+}

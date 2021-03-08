@@ -1,0 +1,112 @@
+@import "./variables";
+
+.section_4_container{
+  width: 85%;
+  margin: auto;
+  
+}
+
+.logo-avion {
+  margin: auto;
+  text-align: center;
+  background: url(../assets/avioneta_143x49.png) no-repeat;
+  height: 50px;
+  width: 145px;
+}
+
+.section4_heading{
+  text-align: center;
+  font-size: 1.5rem;
+  color: $lightBlue;
+}
+
+.section4_subheading1 {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: $darkBlue;
+  text-align: center;
+  font-style: oblique;
+}
+
+.section4_subheading2 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: $darkBlue;
+  text-align: center;
+  font-style: italic;
+}
+
+.contact_form{
+  text-align: center;
+}
+
+.contact_form input{
+  width: 100%;
+  height: 45px;
+  margin: 5px 0px 5px 0px;
+  &::focus {
+    border-width: 10px;
+  }
+  padding-left: 10px;
+  font-size: 1.2rem;
+}
+
+.select_form {
+  display: block;
+  width: 98%;
+  font-family: inherit;
+  height: 45px;
+  margin: 10px 30px 0px 10px;
+  padding-left: 10px;
+  font-size: 1.2rem;
+}
+
+.btn_submit_form {
+  height: 55px;
+  width: 10rem;
+  background-color: $lightBlue;
+  color: white;
+  border-radius: 1rem;
+  border-color: $darkBlue;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+.btn_submit_form:hover {
+  background-color: $darkBlue
+}
+
+@media screen and (max-width: 650px) {
+  .btn_submit_form {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .form_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .form_section input {
+    margin: 10px 10px 10px 10px;
+  }
+
+  .form_section select {
+    margin: 0px 10px 0px 10px;
+  }
+
+
+}
+
+.error_message {
+  background-color: rgba(228, 99, 99, 0.529);
+  font-family: Relway;
+  text-align: center;
+  font-size: 1.5rem;
+  color: $lightBlue;
+  width: 95%;
+  margin: auto;
+}

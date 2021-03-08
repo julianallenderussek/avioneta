@@ -1,0 +1,21 @@
+
+@import "./variables";
+@import "./navbar";
+@import "./hero_image";
+@import "./seccion1";
+@import "./seccion2";
+@import "./seccion3";
+@import "./seccion4";
+@import "./footer";
+
+
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
