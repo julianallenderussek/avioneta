@@ -4,15 +4,14 @@
   position: relative;
   height: 500px;
   overflow: hidden;
-  background: url(../assets/hero_manos.png) no-repeat center;
+  background: url(../assets/Avio_WEB_Asset-02.png) no-repeat center;
   background-size: cover;
   z-index: 1;
+  justify-content: left;
 }
 
 .hero-logo {
-  background: url(../assets/lgo-hero_404x92.png) no-repeat;
   display: block;
-  margin: auto;
   margin-top: 3rem;
   height: 100px;
   width: 410px;
@@ -27,12 +26,40 @@
   position: absolute;
   width: 50%;
   overflow: hidden;
-  text-align: center;
+  margin-left: 10vh;
   z-index: 2;
+  margin-top: 4rem;
 }
 
 .hero-heading {
   font-size: 1.0rem;
+  color: white;
+  font-family: $Raleway;
+  font-weight: 200;
+  font-size: 20px;
+
+}
+
+.emprende-vuelo {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 70px ;
+  font-family: $Raleway;
+  font-weight: 900;
+}
+
+.vuelo {
+  display: inline;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  color: $darkBlue;
+  font-weight: 900;
+  font-family: $Raleway;
+  font-size: 70px;
 }
 
 .hero-subheading {
@@ -40,24 +67,24 @@
 }
 
 .btn-contact {
-  background-color: $lightBlue;
-  font-family: Raleway;
-  font-weight: bold;
-  border-radius: 0.5rem;
+  background-color: $darkBlue;
+  font-size: 10px;
+  font-weight: 400;
+  border: none;
+  border-radius: 2rem;
   color: white;
-  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  padding: 1rem 1.75rem 1rem 1.75rem;
   display: block;
-  margin: auto;
   margin-top: 1rem;
     &:hover {
-      background-color: #141f48;
+      background-color: $lightBlue;
     }
 }
 
 @media screen and (max-width: 650px) {
   .hero-image {
     height: 500px;
-    background: url(../assets/hero_manos.png) no-repeat center;
+    background: url(../assets/Avio_WEB_Asset-02.png) no-repeat center;
     background-size: cover;
   }
   .container-hero-image  {
@@ -65,13 +92,12 @@
   }
 
   .hero-logo-mobile {
-  background: url(../assets/lgo-hero_404x92.png) no-repeat;
+  background: url(../assets/Avio_WEB_Asset-02.png) no-repeat;
   display: block;
   margin: auto;
   margin-top: 3rem;
   height: 100px;
   width: 410px;
   z-index: 3;
-
   }
 }

@@ -1,31 +1,79 @@
 @import "./variables";
 
 .seccion1_main_container {
-  padding: 5%;
-  padding-bottom: 0;
-  padding-top: 4%;
+  display: flex;
+  margin: 5vh 10vh 5vh 10vh ;
+  background: white;
 }
 
-
-.logo-avion {
-  margin: auto;
-  text-align: center;
-  background: url(../assets/avioneta_143x49.png) no-repeat;
-  height: 50px;
-  width: 145px;
+.img_couple {
+  flex: 1;
+  background: url(../assets/Avio_WEB_Asset-08.png) no-repeat center;
+  background-size: 100%;
+  margin-right: 5vh;
 }
 
-.seccion1_title {
+.section1_text {
+  flex: 2;
+}
+
+.subheading_section1 {
   color: $lightBlue;
-  margin: auto;
-  margin-top: 10px;
+  font-size: 30px;
+  font-family: $Raleway;
+  font-weight: $black;
 }
 
-seccion1_subtitle {
-  color: $darkBlue;
+.circle_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  margin: 3px;
 }
 
-.paragraph {
-  font: Ralway;
-  color: $darkBlue;
+.circle {
+  width: 25vh;
+  height: 25vh;
+}
+
+.circle1 {
+  background: url(../assets/Avio_WEB_Asset-09.png) no-repeat center;
+  background-size: 100%;
+}
+
+.circle2 {
+  background: url(../assets/Avio_WEB_Asset-10.png) no-repeat center;
+  background-size: 100%;
+}
+
+.circle3 {
+  background: url(../assets/Avio_WEB_Asset-11.png) no-repeat center;
+  background-size: 100%;
+  
+}
+
+.circle4 {
+  background: url(../assets/Avio_WEB_Asset-12.png) no-repeat center;
+  background-size: 100%;
+  
+}
+
+.circle5 {
+  background: url(../assets/Avio_WEB_Asset-13.png) no-repeat center;
+  background-size: 100%;
+}
+
+p {
+  font-family: $Raleway;
+  font-size: 15px;
+}
+
+.content_servicio {
+  font-family: $Raleway;
+  font-size: 12px;
+}
+
+.bold {
+  font-weight: bold;
 }

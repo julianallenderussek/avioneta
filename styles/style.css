@@ -1,19 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+h3 {
+  color: #5e8ed6;
+}
+
+h3 {
+  color: #5e8ed6;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,23 +24,37 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: white;
+  background-color: #5e8ed6;
   color: #141f48;
   padding: 5px;
+  padding-left: 15vh;
+  padding-right: 15vh;
+  height: 10vh;
 }
 
 .brand-title {
-  font-size: 1.5rem;
-  padding: 5px;
-  margin-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .navbar-image {
-  width: 20%;
+  width: 50%;
 }
 
 .navbar-links {
   height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .navbar-links ul {
@@ -50,6 +63,9 @@
   display: flex;
   margin: 0;
   padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar-links li {
@@ -59,13 +75,16 @@
 .navbar-links li a {
   display: block;
   text-decoration: none;
-  color: #141f48;
+  color: white;
   padding: 1rem;
+  white-space: nowrap;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
 }
 
 .navbar-links li a:hover {
-  background-color: #5e93dB;
-  color: white;
+  color: #071d49;
 }
 
 .toggle-button {
@@ -89,6 +108,29 @@
   width: 100%;
   background-color: #141f48;
   border-radius: 10px;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 1%;
+}
+
+.icons a img {
+  width: 25px;
+  margin: 5px;
 }
 
 @media (max-width: 800px) {
@@ -130,19 +172,24 @@
   }
 }
 
+h3 {
+  color: #5e8ed6;
+}
+
 .hero-image {
   position: relative;
   height: 500px;
   overflow: hidden;
-  background: url(../assets/hero_manos.png) no-repeat center;
+  background: url(../assets/Avio_WEB_Asset-02.png) no-repeat center;
   background-size: cover;
   z-index: 1;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 .hero-logo {
-  background: url(../assets/lgo-hero_404x92.png) no-repeat;
   display: block;
-  margin: auto;
   margin-top: 3rem;
   height: 100px;
   width: 410px;
@@ -157,12 +204,39 @@
   position: absolute;
   width: 50%;
   overflow: hidden;
-  text-align: center;
+  margin-left: 10vh;
   z-index: 2;
+  margin-top: 4rem;
 }
 
 .hero-heading {
   font-size: 1.0rem;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.emprende-vuelo {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 70px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+}
+
+.vuelo {
+  display: inline;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  color: #071d49;
+  font-weight: 900;
+  font-family: "Raleway", sans-serif;
+  font-size: 70px;
 }
 
 .hero-subheading {
@@ -170,32 +244,32 @@
 }
 
 .btn-contact {
-  background-color: #5e93dB;
-  font-family: Raleway;
-  font-weight: bold;
-  border-radius: 0.5rem;
+  background-color: #071d49;
+  font-size: 10px;
+  font-weight: 400;
+  border: none;
+  border-radius: 2rem;
   color: white;
-  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  padding: 1rem 1.75rem 1rem 1.75rem;
   display: block;
-  margin: auto;
   margin-top: 1rem;
 }
 
 .btn-contact:hover {
-  background-color: #141f48;
+  background-color: #5e8ed6;
 }
 
 @media screen and (max-width: 650px) {
   .hero-image {
     height: 500px;
-    background: url(../assets/hero_manos.png) no-repeat center;
+    background: url(../assets/Avio_WEB_Asset-02.png) no-repeat center;
     background-size: cover;
   }
   .container-hero-image {
     display: none;
   }
   .hero-logo-mobile {
-    background: url(../assets/lgo-hero_404x92.png) no-repeat;
+    background: url(../assets/Avio_WEB_Asset-02.png) no-repeat;
     display: block;
     margin: auto;
     margin-top: 3rem;
@@ -205,363 +279,443 @@
   }
 }
 
+h3 {
+  color: #5e8ed6;
+}
+
 .seccion1_main_container {
-  padding: 5%;
-  padding-bottom: 0;
-  padding-top: 4%;
-}
-
-.logo-avion {
-  margin: auto;
-  text-align: center;
-  background: url(../assets/avioneta_143x49.png) no-repeat;
-  height: 50px;
-  width: 145px;
-}
-
-.seccion1_title {
-  color: #5e93dB;
-  margin: auto;
-  margin-top: 10px;
-}
-
-seccion1_subtitle {
-  color: #141f48;
-}
-
-.paragraph {
-  font: Ralway;
-  color: #141f48;
-}
-
-.seccion2_main_container {
-  padding: 5%;
-  padding-top: 2%;
-  padding-bottom: 1%;
-  background-color: #141f48;
-}
-
-.logo-avion {
-  margin: auto;
-  text-align: center;
-  background: url(../assets/avioneta_143x49.png) no-repeat;
-  height: 50px;
-  width: 145px;
-}
-
-.seccion2_title {
-  color: #5e93dB;
-  margin: auto;
-  margin-top: 10px;
-}
-
-.seccion2_subtitle {
-  color: white;
-}
-
-.paragraph_2 {
-  font: Ralway;
-  color: white;
-}
-
-.seccion3_main_container {
-  padding: 2%;
-  padding-top: 2%;
-  padding-bottom: 1%;
-  background-color: white;
-}
-
-.seccion3_title {
-  color: #5e93dB;
-  margin: auto;
-  margin-top: 10px;
-  text-align: center;
-  margin-bottom: 2.5%;
-}
-
-.flex_main_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin: 5vh 10vh 5vh 10vh;
+  background: white;
 }
 
-.column {
-  padding: 1%;
-  margin: .25%;
-  border-radius: 2rem;
-  font-weight: bold;
-  width: 25%;
+.img_couple {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: url(../assets/Avio_WEB_Asset-08.png) no-repeat center;
+  background-size: 100%;
+  margin-right: 5vh;
 }
 
-.column h3 {
-  text-align: center;
-  font-size: 1.4rem;
+.section1_text {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 
-.column1 {
-  background-color: #5e93dB;
+.subheading_section1 {
+  color: #5e8ed6;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
 }
 
-.column1 h3 {
-  text-align: center;
-  color: white;
-}
-
-.column1 p {
-  text-align: center;
-  color: white;
-}
-
-.column2 {
-  background-color: #9dc2f2d2;
-}
-
-.column3 {
-  background-color: #5E93DB;
-}
-
-.column3 h3 {
-  color: white;
-}
-
-.column3 p {
-  color: white;
-}
-
-.column4 {
-  background-color: #071D49;
-  color: white;
-}
-
-@media screen and (max-width: 650px) {
-  .flex_main_container {
-    display: block;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .column {
-    margin: 2%;
-    padding: 2%;
-    width: 96%;
-  }
-}
-
-.btn_mas_info {
-  height: 35px;
-  width: 10rem;
-  background-color: white;
-  color: #141f48;
-  border-radius: 2rem;
-  border-color: #141f48;
-  font-weight: bold;
-  font-style: normal;
-  display: block;
-  margin: auto;
-}
-
-.btn_mas_info:hover {
-  color: white;
-}
-
-.section_4_container {
-  width: 85%;
-  margin: auto;
-}
-
-.logo-avion {
-  margin: auto;
-  text-align: center;
-  background: url(../assets/avioneta_143x49.png) no-repeat;
-  height: 50px;
-  width: 145px;
-}
-
-.section4_heading {
-  text-align: center;
-  font-size: 1.5rem;
-  color: #5e93dB;
-}
-
-.section4_subheading1 {
-  font-size: 1.4rem;
-  font-weight: 900;
-  color: #141f48;
-  text-align: center;
-  font-style: oblique;
-}
-
-.section4_subheading2 {
-  font-size: 1.2rem;
-  font-weight: 900;
-  color: #141f48;
-  text-align: center;
-  font-style: italic;
-}
-
-.contact_form {
-  text-align: center;
-}
-
-.contact_form input {
-  width: 100%;
-  height: 45px;
-  margin: 5px 0px 5px 0px;
-  padding-left: 10px;
-  font-size: 1.2rem;
-}
-
-.contact_form input::focus {
-  border-width: 10px;
-}
-
-.select_form {
-  display: block;
-  width: 98%;
-  font-family: inherit;
-  height: 45px;
-  margin: 10px 30px 0px 10px;
-  padding-left: 10px;
-  font-size: 1.2rem;
-}
-
-.btn_submit_form {
-  height: 55px;
-  width: 10rem;
-  background-color: #5e93dB;
-  color: white;
-  border-radius: 1rem;
-  border-color: #141f48;
-  margin-top: 10px;
-  font-weight: bold;
-  font-size: 1.4rem;
-  font-style: italic;
-}
-
-.btn_submit_form:hover {
-  background-color: #141f48;
-}
-
-@media screen and (max-width: 650px) {
-  .btn_submit_form {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 650px) {
-  .form_section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .form_section input {
-    margin: 10px 10px 10px 10px;
-  }
-  .form_section select {
-    margin: 0px 10px 0px 10px;
-  }
-}
-
-.error_message {
-  background-color: rgba(228, 99, 99, 0.529);
-  font-family: Relway;
-  text-align: center;
-  font-size: 1.5rem;
-  color: #5e93dB;
-  width: 95%;
-  margin: auto;
-}
-
-.main-footer {
-  background: #141f48;
-  padding: 2rem;
-  margin-top: 3rem;
-}
-
-.main-footer__links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.main-footer__link {
-  display: block;
-  margin: 1rem 0;
-}
-
-.main-footer__link a {
-  color: white;
-  text-decoration: none;
-}
-
-.main-footer__link a:hover,
-.main-footer__link a:active {
-  color: #ccc;
-}
-
-.instagram-icon {
-  background: url(/assets/insta_36x36.png);
-  width: 37px;
-  height: 37px;
-}
-
-.facebook {
-  color: white;
-  margin: 3px;
-}
-
-.twitter {
-  color: white;
-  height: 20px;
-  width: 20px;
-  margin: 3px;
-}
-
-.instagram {
-  margin: 4px;
-  margin-left: 5px;
-}
-
-.column_paragraph {
-  font-size: 0.90rem;
-}
-
-.column_objectives {
-  font-size: 1.0rem;
-}
-
-.container_aviso {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.circle_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 3px;
+}
+
+.circle {
+  width: 25vh;
+  height: 25vh;
+}
+
+.circle1 {
+  background: url(../assets/Avio_WEB_Asset-09.png) no-repeat center;
+  background-size: 100%;
+}
+
+.circle2 {
+  background: url(../assets/Avio_WEB_Asset-10.png) no-repeat center;
+  background-size: 100%;
+}
+
+.circle3 {
+  background: url(../assets/Avio_WEB_Asset-11.png) no-repeat center;
+  background-size: 100%;
+}
+
+.circle4 {
+  background: url(../assets/Avio_WEB_Asset-12.png) no-repeat center;
+  background-size: 100%;
+}
+
+.circle5 {
+  background: url(../assets/Avio_WEB_Asset-13.png) no-repeat center;
+  background-size: 100%;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+}
+
+.content_servicio {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+h3 {
+  color: #5e8ed6;
+}
+
+.big_container {
+  background-color: #9dc2f2d2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section2_heading {
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.seccion2_main_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0vh 10vh 5vh 10vh;
+}
+
+.servicio_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.servicio_container input {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.servicio {
+  width: 15vh;
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.servicio1 {
+  background: url(../assets/Avio_WEB_Asset-14.png) no-repeat center;
+  background-size: 70%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.servicio2 {
+  background: url(../assets/Avio_WEB_Asset-15.png) no-repeat center;
+  background-size: 70%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.servicio3 {
+  background: url(../assets/Avio_WEB_Asset-16.png) no-repeat center;
+  background-size: 70%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.servicio4 {
+  background: url(../assets/Avio_WEB_Asset-17.png) no-repeat center;
+  background-size: 45%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn-image {
+  height: 50px;
+  width: 155px;
+  background: none;
+}
+
+.title-paquete {
+  margin-left: 15vh;
+}
+
+.list-paquete {
+  margin-left: 15vh;
+  width: 70%;
+}
+
+.list-paquete li {
+  margin-top: 1rem;
+}
+
+.display_container {
+  display: none;
+}
+
+h3 {
+  color: #5e8ed6;
+}
+
+.section_4_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.heading_hagamos_equipo {
+  color: #5e8ed6;
+  font-size: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+}
+
+.section4_subheading2 {
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: #5e8ed6;
+}
+
+input {
+  background-color: #9dc2f2d2;
+  width: 47.5%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  height: 2rem;
+  padding-left: 1rem;
+  border: none;
+  color: #071d49;
+}
+
+input::-webkit-input-placeholder {
+  color: #5e8ed6;
+}
+
+input:-ms-input-placeholder {
+  color: #5e8ed6;
+}
+
+input::-ms-input-placeholder {
+  color: #5e8ed6;
+}
+
+input::placeholder {
+  color: #5e8ed6;
+}
+
+select {
+  background-color: #9dc2f2d2;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  height: 2rem;
+  padding-left: 1rem;
+  border: none;
+  width: 90%;
+  height: 70px;
+}
+
+select::-webkit-input-placeholder {
+  color: #5e8ed6;
+}
+
+select:-ms-input-placeholder {
+  color: #5e8ed6;
+}
+
+select::-ms-input-placeholder {
+  color: #5e8ed6;
+}
+
+select::placeholder {
+  color: #5e8ed6;
+}
+
+.form_section {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact_form {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blue {
+  color: #071d49;
+}
+
+.btn-contact {
+  background-color: #071d49;
+  font-size: 15px;
+  font-weight: 400;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  padding: 1rem 1.75rem 1rem 1.75rem;
+  display: block;
+  margin-top: 1rem;
+}
+
+.btn-contact:hover {
+  background-color: #5e8ed6;
+}
+
+.logo-avion {
+  background: url(/assets/emblema_azul.png) no-repeat center;
+  background-size: 200px;
+  width: 300;
+  height: 100;
+}
+
+h3 {
+  color: #5e8ed6;
+}
+
+.main-footer {
+  background: white;
+  padding: 2rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer nav {
+  width: 100%;
+}
+
+.main-footer__link a {
+  color: #071d49;
+  text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color: #5e8ed6;
+}
+
+.container_aviso {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #071d49;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
 }
 
 .aviso_privacidad {
-  text-decoration: underline;
-  color: white;
+  color: #5e8ed6;
   font-size: 0.75rem;
+  justify-self: flex-start;
 }
 
-.container_aviso p {
-  color: white;
-  font-size: 0.75rem;
+.avioneta_2020 {
+  margin-right: 100px;
 }
 
 * {

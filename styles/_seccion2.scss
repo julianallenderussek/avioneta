@@ -1,32 +1,97 @@
 @import "./variables";
 
+.big_container {
+  background-color: $superlightblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section2_heading {
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+  font-family: $Raleway;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
 .seccion2_main_container {
-  padding: 5%;
-  padding-top: 2%;
-  padding-bottom: 1%;
-  background-color: $darkBlue;
+  display: flex;
+  margin: 0vh 10vh 5vh 10vh;
+
+}
+
+.servicio_container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicio_container input {
+  align-self: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.servicio {
+  width: 15vh;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicio1 {
+  background: url(../assets/Avio_WEB_Asset-14.png) no-repeat center;
+  background-size: 70%;
+  align-self: center;
+  justify-content: center;
+}
+
+.servicio2 {
+  background: url(../assets/Avio_WEB_Asset-15.png) no-repeat center;
+  background-size: 70%;
+  align-self: center;
+  justify-content: center
   
 }
 
-.logo-avion {
-  margin: auto;
-  text-align: center;
-  background: url(../assets/avioneta_143x49.png) no-repeat;
+.servicio3 {
+  background: url(../assets/Avio_WEB_Asset-16.png) no-repeat center;
+  background-size: 70%;
+  align-self: center;
+  justify-content: center
+}
+
+.servicio4 {
+  background: url(../assets/Avio_WEB_Asset-17.png) no-repeat center;
+  background-size: 45%;
+  align-self: center;
+  justify-content: center
+}
+
+.btn-image {
   height: 50px;
-  width: 145px;
+  width: 155px;
+  background: none;
 }
 
-.seccion2_title {
-  color: $lightBlue;
-  margin: auto;
-  margin-top: 10px;
+.title-paquete {
+  margin-left: $columnmargin;
 }
 
-.seccion2_subtitle {
-  color: $white;
+.list-paquete {
+  margin-left: $columnmargin;
+  width: 70%;
 }
 
-.paragraph_2{
-  font: Ralway;
-  color: $white;
+.list-paquete li {
+  margin-top: 1rem;
+}
+
+.display_container {
+  display:none
 }
