@@ -49,17 +49,17 @@ function validation() {
   var error_message = document.getElementById('error_message');
   var text;
 
-  if (name.length < 1) {
-    text = "Favor de ingresar un nombre"
-    error_message.innerHTML = text
-    return false
-  }
+  // if (name.length < 1) {
+  //   text = "Favor de ingresar un nombre"
+  //   error_message.innerHTML = text
+  //   return false
+  // }
 
-  if (last_name.length < 1) {
-    text = "Favor de ingresar un apellido"
-    error_message.innerHTML = text
-    return false
-  }
+  // if (last_name.length < 1) {
+  //   text = "Favor de ingresar un apellido"
+  //   error_message.innerHTML = text
+  //   return false
+  // }
   
   if (isNaN(phone)) {
     text = "Favor de ingresar un télefono valido"
@@ -95,69 +95,69 @@ button3 = document.getElementsByClassName('btn3')
 button4 = document.getElementsByClassName('btn4')
 
 
+// Era la funcionalidad de la flecha.
+// function dropdown1() {
+//   if (toggleCount == 0) {
+//     displayContainer[0].innerHTML = innerHTML1
+//     displayContainer[0].style.display = 'flex'
+//     button1[0].src = '/assets/Avio_WEB_Asset-18.png'
+//     toggleCount = 1;
+//   } else if (toggleCount == 1) {
+//     displayContainer[0].style.display = 'none'
+//     toggleCount = 0;
+//     button1[0].src = '/assets/155x50.png'
+//     button2[0].src = '/assets/155x50.png'
+//     button3[0].src = '/assets/155x50.png'
+//     button4[0].src = '/assets/155x50.png'
+//   }
 
-function dropdown1() {
-  if (toggleCount == 0) {
-    displayContainer[0].innerHTML = innerHTML1
-    displayContainer[0].style.display = 'flex'
-    button1[0].src = '/assets/Avio_WEB_Asset-18.png'
-    toggleCount = 1;
-  } else if (toggleCount == 1) {
-    displayContainer[0].style.display = 'none'
-    toggleCount = 0;
-    button1[0].src = '/assets/155x50.png'
-    button2[0].src = '/assets/155x50.png'
-    button3[0].src = '/assets/155x50.png'
-    button4[0].src = '/assets/155x50.png'
-  }
+// }
 
-}
+// function dropdown2() {
+//   if (toggleCount == 0) {
+//     displayContainer[0].innerHTML = innerHTML2
+//     displayContainer[0].style.display = 'flex'
+//     button2[0].src = '/assets/Avio_WEB_Asset-18.png'
+//     toggleCount = 1;
+//   } else if (toggleCount == 1) {
+//     displayContainer[0].style.display = 'none'
+//     toggleCount = 0;
+//     button1[0].src = '/assets/155x50.png'
+//     button2[0].src = '/assets/155x50.png'
+//     button3[0].src = '/assets/155x50.png'
+//     button4[0].src = '/assets/155x50.png'
+//   }
+// }
 
-function dropdown2() {
-  if (toggleCount == 0) {
-    displayContainer[0].innerHTML = innerHTML2
-    displayContainer[0].style.display = 'flex'
-    button2[0].src = '/assets/Avio_WEB_Asset-18.png'
-    toggleCount = 1;
-  } else if (toggleCount == 1) {
-    displayContainer[0].style.display = 'none'
-    toggleCount = 0;
-    button1[0].src = '/assets/155x50.png'
-    button2[0].src = '/assets/155x50.png'
-    button3[0].src = '/assets/155x50.png'
-    button4[0].src = '/assets/155x50.png'
-  }
-}
+// function dropdown3() {
+//   if (toggleCount == 0) {
+//     displayContainer[0].innerHTML = innerHTML3
+//     displayContainer[0].style.display = 'flex'
+//     button3[0].src = '/assets/Avio_WEB_Asset-18.png'
+//     toggleCount = 1;
+//   } else if (toggleCount == 1) {
+//     displayContainer[0].style.display = 'none'
+//     toggleCount = 0;
+//     button1[0].src = '/assets/155x50.png'
+//     button2[0].src = '/assets/155x50.png'
+//     button3[0].src = '/assets/155x50.png'
+//     button4[0].src = '/assets/155x50.png'
+//   }
 
-function dropdown3() {
-  if (toggleCount == 0) {
-    displayContainer[0].innerHTML = innerHTML3
-    displayContainer[0].style.display = 'flex'
-    button3[0].src = '/assets/Avio_WEB_Asset-18.png'
-    toggleCount = 1;
-  } else if (toggleCount == 1) {
-    displayContainer[0].style.display = 'none'
-    toggleCount = 0;
-    button1[0].src = '/assets/155x50.png'
-    button2[0].src = '/assets/155x50.png'
-    button3[0].src = '/assets/155x50.png'
-    button4[0].src = '/assets/155x50.png'
-  }
+// }
+// function dropdown4() {
+//   if (toggleCount == 0) {
+//     displayContainer[0].innerHTML = innerHTML4
+//     displayContainer[0].style.display = 'flex'
+//     button4[0].src = '/assets/Avio_WEB_Asset-18.png'
+//     toggleCount = 1;
+//   } else if (toggleCount == 1) {
+//     displayContainer[0].style.display = 'none'
+//     toggleCount = 0;
+//     button1[0].src = '/assets/155x50.png'
+//     button2[0].src = '/assets/155x50.png'
+//     button3[0].src = '/assets/155x50.png'
+//     button4[0].src = '/assets/155x50.png'
+//   }
 
-}
-function dropdown4() {
-  if (toggleCount == 0) {
-    displayContainer[0].innerHTML = innerHTML4
-    displayContainer[0].style.display = 'flex'
-    button4[0].src = '/assets/Avio_WEB_Asset-18.png'
-    toggleCount = 1;
-  } else if (toggleCount == 1) {
-    displayContainer[0].style.display = 'none'
-    toggleCount = 0;
-    button1[0].src = '/assets/155x50.png'
-    button2[0].src = '/assets/155x50.png'
-    button3[0].src = '/assets/155x50.png'
-    button4[0].src = '/assets/155x50.png'
-  }
-
-}
+// }

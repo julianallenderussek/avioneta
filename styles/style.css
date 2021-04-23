@@ -17,7 +17,6 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -48,6 +47,7 @@ h3 {
 }
 
 .navbar-links {
+  width: 100%;
   height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -89,7 +89,7 @@ h3 {
 
 .toggle-button {
   position: absolute;
-  top: .75rem;
+  top: 1.5rem;
   right: 1rem;
   display: none;
   -webkit-box-orient: vertical;
@@ -133,7 +133,7 @@ h3 {
   margin: 5px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   .navbar {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -142,6 +142,7 @@ h3 {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    width: 100%;
   }
   .toggle-button {
     display: -webkit-box;
@@ -166,9 +167,34 @@ h3 {
     padding: .5rem 1rem;
   }
   .navbar-links.active {
+    padding-top: 10px;
+    height: 250px;
+    display: block;
+    position: absolute;
+    top: 80px;
+    z-index: 10;
+    background: #071d49;
+  }
+  .icons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 150px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 1%;
+    margin-top: 8px;
+  }
+  .navbar-links li a:hover {
+    color: #5e8ed6;
   }
 }
 
@@ -215,6 +241,8 @@ h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 200;
   font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .emprende-vuelo {
@@ -259,23 +287,71 @@ h3 {
   background-color: #5e8ed6;
 }
 
-@media screen and (max-width: 650px) {
+@media (max-width: 650px) {
   .hero-image {
     height: 500px;
     background: url(../assets/Avio_WEB_Asset-02.png) no-repeat center;
     background-size: cover;
   }
+  .navbar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .toogle-button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .brand-title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero-logo-mobile {
+    height: 0;
+  }
   .container-hero-image {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .emprende-vuelo {
+    font-size: 40px;
+  }
+  .vuelo {
+    font-size: 40x;
   }
   .hero-logo-mobile {
     background: url(../assets/Avio_WEB_Asset-02.png) no-repeat;
+    position: absolute;
     display: block;
     margin: auto;
     margin-top: 3rem;
     height: 100px;
     width: 410px;
     z-index: 3;
+  }
+  .container-hero-image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-left: 5vh;
+    z-index: 2;
+    margin-top: 5rem;
+  }
+  .btn-contact {
+    width: 160px;
+  }
+  .background_text_mobile {
+    width: 80%;
   }
 }
 
@@ -374,6 +450,30 @@ p {
   font-weight: bold;
 }
 
+@media (max-width: 650px) {
+  .img_couple {
+    -webkit-box-flex: 1;
+    /* flex: 1; */
+    background: url(../assets/Avio_WEB_Asset-08.png) no-repeat center;
+    background-size: 100%;
+    margin-right: 0;
+    height: 200px;
+  }
+  .seccion1_main_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .vuelo {
+    font-size: 3rem;
+    background-color: #5e8ed6;
+  }
+  .content_servicio {
+    font-size: 15px;
+  }
+}
+
 h3 {
   color: #5e8ed6;
 }
@@ -421,9 +521,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 0px 10px 0px 10px;
 }
 
 .servicio_container input {
@@ -457,9 +555,10 @@ h3 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  justify-self: flex-start;
 }
 
 .servicio2 {
@@ -468,9 +567,10 @@ h3 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  justify-self: flex-start;
 }
 
 .servicio3 {
@@ -479,9 +579,9 @@ h3 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .servicio4 {
@@ -490,9 +590,9 @@ h3 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .btn-image {
@@ -516,6 +616,69 @@ h3 {
 
 .display_container {
   display: none;
+}
+
+.btn-product-page {
+  background-color: #5e8ed6;
+  height: 50px;
+  width: 150px;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin-top: 10px;
+}
+
+.btn-product-page:hover {
+  background-color: #071d49;
+}
+
+.a-btn {
+  justify-self: flex-end;
+  text-decoration: none;
+}
+
+.para_servicio {
+  height: 100px;
+}
+
+@media (max-width: 650px) {
+  .big_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .seccion2_main_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .heading_hagamos_equipo {
+    font-size: 2rem;
+  }
+  .para_servicio {
+    width: 250px;
+    height: 100px;
+  }
+  .servicio_container {
+    margin-top: 10px;
+  }
+  .section2_heading {
+    margin-top: 4rem;
+    font-size: 2rem;
+  }
+  .para_servicio {
+    height: 50px;
+    width: 280px;
+  }
+  .servicio {
+    margin-top: 30px;
+  }
 }
 
 h3 {
@@ -552,6 +715,8 @@ h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   color: #5e8ed6;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 input {
@@ -663,13 +828,55 @@ select::placeholder {
   height: 100;
 }
 
+.option_text {
+  color: #5e8ed6;
+}
+
+@media (max-width: 650px) {
+  .heading_hagamos_equipo {
+    font-size: 2.2rem;
+  }
+  .section4_subheading2 {
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    color: #5e8ed6;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .contact_form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form_section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  input {
+    width: 100%;
+  }
+  .select {
+    height: 40px;
+  }
+}
+
 h3 {
   color: #5e8ed6;
 }
 
 .main-footer {
   background: white;
-  padding: 2rem;
+  padding: 20px 5px 0px 5px;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -694,10 +901,10 @@ footer nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: #071d49;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -706,16 +913,50 @@ footer nav {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  margin: auto;
 }
 
 .aviso_privacidad {
   color: #5e8ed6;
-  font-size: 0.75rem;
-  justify-self: flex-start;
+  font-size: 12px;
+  margin: auto;
 }
 
 .avioneta_2020 {
   margin-right: 100px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.franja {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 50px;
+  background-color: #071d49;
+  margin: 0;
+  padding: 0;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.franja p {
+  margin: 5px;
 }
 
 * {

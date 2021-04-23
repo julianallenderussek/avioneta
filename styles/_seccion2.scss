@@ -26,7 +26,7 @@
   flex-direction: column;
   flex: 1;
   align-items: center;
-  justify-content: center;
+  margin: 0px 10px 0px 10px;
 }
 
 .servicio_container input {
@@ -48,29 +48,30 @@
   background: url(../assets/Avio_WEB_Asset-14.png) no-repeat center;
   background-size: 70%;
   align-self: center;
-  justify-content: center;
+  justify-content: flex-start;
+  justify-self: flex-start;
 }
 
 .servicio2 {
   background: url(../assets/Avio_WEB_Asset-15.png) no-repeat center;
   background-size: 70%;
   align-self: center;
-  justify-content: center
-  
+  justify-content: flex-start;
+  justify-self: flex-start;  
 }
 
 .servicio3 {
   background: url(../assets/Avio_WEB_Asset-16.png) no-repeat center;
   background-size: 70%;
   align-self: center;
-  justify-content: center
+  justify-content: flex-start;
 }
 
 .servicio4 {
   background: url(../assets/Avio_WEB_Asset-17.png) no-repeat center;
   background-size: 45%;
   align-self: center;
-  justify-content: center
+  justify-content: flex-start;
 }
 
 .btn-image {
@@ -93,5 +94,72 @@
 }
 
 .display_container {
-  display:none
+  display:none;
+}
+
+.btn-product-page {
+  background-color: $lightBlue;
+  height: 50px;
+  width: 150px;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin-top: 10px;
+    &:hover {
+      background-color: $darkBlue;
+    }
+}
+
+.a-btn {
+  justify-self: flex-end;
+  text-decoration: none;
+}
+
+.para_servicio {
+  height: 100px;
+}
+
+@media (max-width: 650px) {
+  .big_container {
+    flex-direction: column;
+  }
+
+  .seccion2_main_container {
+    flex-direction: column;
+  }
+
+  .heading_hagamos_equipo{
+    font-size: 2rem;
+  }
+
+  .para_servicio {
+    width: 250px;
+    height: 100px;
+  }
+
+  .servicio_container{
+    margin-top: 10px;
+  }
+
+  .section2_heading {
+    margin-top: 4rem;
+    font-size: 2rem;
+  }
+  
+  .para_servicio {
+    height: 50px;
+    width: 280px;
+  }
+
+  .servicio {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 360px) {
+
 }

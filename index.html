@@ -22,28 +22,30 @@
     </a>
     <div class="navbar-links">
       <ul>
-        <li><a href="#">SERVICIOS</a></li>
-        <li><a href="#">NUESTRA HISTORIA</a></li>
-        <li><a href="#">EQUIPO</a></li>
-        <li><a href="#">BLOG</a></li>
-        <li><a href="#">CONTACTO</a></li>
+        <li><a class='link-link' href="#sec_link">SERVICIOS</a></li>
+        <li><a class='hover_link' target="_blank" href="/pages/aboutus.html">NUESTRA HISTORIA</a></li>
+        <li><a target="_blank" href="/pages/team.html">EQUIPO</a></li>
+        <li><a target="_blank" href="#">BLOG</a></li>
+        <li><a href="#contact_form">CONTACTO</a></li>
         <div class='icons'>
-          <a href=""><img src="/assets/Avio_WEB_Asset-03.png" alt=""></a>
-          <a href=""><img src="/assets/Avio_WEB_Asset-04.png" alt=""></a>
-          <a href=""><img src="/assets/Avio_WEB_Asset-05.png" alt=""></a>
+          <a target="_blank" href="https://wa.link/pgxwq9" ><img src="/assets/Avio_WEB_Asset-03.png" alt=""></a>
+          <a target="_blank" href="mailto:contacto@avioneta.org"><img src="/assets/Avio_WEB_Asset-03.png" alt=""></a>
+          <a  target="_blank" href="https://www.instagram.com/avioneta_mx/"><img src="/assets/Avio_WEB_Asset-04.png" alt=""></a>
+          <a target="_blank" href="https://www.facebook.com/avioneta.mx"><img src="/assets/Avio_WEB_Asset-05.png" alt=""></a>
         </div>
       </ul>
-
     </div>
   </nav>
 
   <!-- Hero Image Section -->
-  <div class="hero-logo-mobile"></div>
+  <!-- <div class="hero-logo-mobile"></div> -->
   <div class="hero-image">
     <div class="container-hero-image">
-      <h1 class="emprende-vuelo"> Emprende <p class="vuelo">vuelo </p> <br/> con nosotros.</h1>
-      <h1><span class="hero-heading">Prevención y manejo de problemas <br/> consumo de alcohol</span></h1>
-      <button class="btn-contact">CONTACTANOS</button>
+      <div class="background_text_mobile">
+        <h1 class="emprende-vuelo"> Emprende <p class="vuelo">vuelo </p> <br/> con nosotros.</h1>
+        <h1><span class="hero-heading">Prevención y manejo de problemas por<br/>consumo de alcohol</span></h1>
+        <button class="btn-contact">CONTÁCTANOS</button>
+      </div>
     </div>
   </div>
 
@@ -61,8 +63,7 @@
 
         Creamos contenido creativo, positivo e informativo que educa, 
         concientiza y desestigmatiza para cambiar la percepción 
-        de la sociedad de los problemas de consumo de alcohol y así 
-        prevenirlos</p>
+        de la sociedad de los problemas de consumo de alcohol, y así prevenirlos.</p>
     </div>
   </div>
 
@@ -84,7 +85,7 @@
 
     <div class="circle_container">
       <div class="circle circle3"></div>
-      <p class="content_servicio">Solo el 7% buscan algún tipo 
+      <p class="content_servicio">Sólo el 7% busca algún tipo 
         de ayuda y más del 50% de 
         <span class="bold"> la ayuda no es profesional</span></p>
     </div>
@@ -92,13 +93,12 @@
     <div class="circle_container">
       <div class="circle circle4"></div>
       <p class="content_servicio">10 millones más en <span class="bold">riesgo 
-        por consumo diario</span> o 
-        excesivo una vez por semana</p>
+        de desarrollar un trastorno</span> por consumo diario o excesivo una vez por semana</p>
     </div>
 
     <div class="circle_container">
       <div class="circle circle5"></div>
-      <p class="content_servicio">20 millones de 
+      <p class="content_servicio">Minimo 20 millones de 
         <span class="bold">seres queridos también afectados</span>
         por problemas de consumo 
         ajenos</p>
@@ -108,46 +108,47 @@
 
   <!-- Section 2 Servicios y Productos -->
   <div class="big_container">
-    <h1 class="section2_heading">Servicios y Productos</h1>
+    <h1 class="section2_heading" id='sec_link'>Servicios y Productos</h1>
     
       <div class="seccion2_main_container">
         <div class="servicio_container">
           <div class="servicio servicio1"></div>
-          <h3>Detox @Home</h3>
-          <p>Ayuda a un ser querido que 
-            sufre síndrome de 
-            abstinencia al dejar de tomar</p>
-            <input class="btn-image btn1" onclick="dropdown1()" type="image" id="btn-mas-info" alt="Más Información"
-            src="/assets/155x50.png">
+          <h3>Detox@Home</h3>
+          <p class="para_servicio">El mejor primer paso como nunca antes visto en un proceso de recuperación a largo plazo</p>
+            <!-- <input class="btn-image btn1" onclick="dropdown1()" type="image" id="btn-mas-info" alt="Más Información" src="/assets/155x50.png"> -->
+            <a href="mailto:contacto@avioneta.org" target="_blank"  class='a-btn'><button class="btn-product-page">Más Info</button></a>
         </div>
   
         <div class="servicio_container">
           <div class="servicio servicio2"></div>
-          <h3>#Vive Diferente</h3>
-          <p>Servicio de concierge 
+          <h3>#ViveDiferente MTY</h3>
+          <p class="para_servicio">Servicio de concierge 
             para eventos 
             NO/LOW Alcohol</p>
-            <input class="btn-image btn2" onclick="dropdown2()" type="image" id="btn-mas-info" alt="Más Información"
-            src="/assets/output-onlinepngtools.png">
+            <!-- <input class="btn-image btn2" onclick="dropdown2()" type="image" id="btn-mas-info" alt="Más Información"
+            src="/assets/output-onlinepngtools.png"> -->
+            <a href="mailto:contacto@avioneta.org" target="_blank" class='a-btn'><button class="btn-product-page">Más Info</button></a>
         </div>
   
         <div class="servicio_container">
           <div class="servicio servicio3"></div>
           <h3>Vuelo Business Class</h3>
-          <p>La salud mental y física de 
+          <p class="para_servicio">La salud mental y física de 
             tus empleados afecta a toda 
             tu organización.</p>
-            <input class="btn-image btn3" type="image" onclick="dropdown3()" id="btn-mas-info" alt="Más Información"
-            src="/assets/output-onlinepngtools.png">
+            <!-- <input class="btn-image btn3" type="image" onclick="dropdown3()" id="btn-mas-info" alt="Más Información"
+            src="/assets/output-onlinepngtools.png"> -->
+            <a href="mailto:contacto@avioneta.org" target="_blank" class='a-btn'><button class="btn-product-page">Más Info</button></a>
         </div>
   
         <div class="servicio_container">
           <div class="servicio servicio4"></div>
           <h3>AA Padrino Virtual</h3>
-          <p>App local que facilita elegir un 
-            grupo de AA al cual atende</p>
-            <input class="btn-image btn4" onclick="dropdown4()" type="image" id="btn-mas-info" alt="Más Información"
-            src="/assets/output-onlinepngtools.png">
+          <p class="para_servicio">App que facilita elegir un 
+            grupo local de AA al cual asistir</p>
+            <!-- <input class="btn-image btn4" onclick="dropdown4()" type="image" id="btn-mas-info" alt="Más Información"
+            src="/assets/output-onlinepngtools.png"> -->
+            <a href="mailto:contacto@avioneta.org" target="_blank" class='a-btn'><button class="btn-product-page">Más Info</button></a>
         </div>
       </div>
   </div>
@@ -166,16 +167,16 @@
 
     <!-- Seccion 4 Contactanos -->
     <div class="section_4_main">
-        <h1 class="heading_hagamos_equipo">¡Hagamos <span class="blue">equipo!</span></h1>
+        <h1 class="heading_hagamos_equipo" id="contact_form">¡Hagamos <span class="blue">equipo!</span></h1>
         <!-- <h3 class="section4_subheading1">Ponte en contacto con nosotros</h3> -->
-         <h3 class="section4_subheading2">Estamos para ayudarte, <span class="blue">contáctanos</span> si crees que tu consumo <br/> de alcohol o el de un ser querido pudiera ser problemático. <br>
+         <h3 class="section4_subheading2">Estamos para ayudarte, <span class="blue">contáctanos</span> si crees que tu consumo de alcohol o el de un ser querido pudiera ser problemático. <br>
           </h3>
           <!-- Error Message -->
           <div class="error_message" id='error_message'></div>
            <form action="" class="contact_form" onsubmit="validation()">
             <div class="form_section">
-              <input type="text" placeholder="Nombre*" id="name">
-              <input type="text" placeholder="Apellidos*" id="last_name">
+              <input type="text" placeholder="Nombre" id="name">
+              <input type="text" placeholder="Apellidos" id="last_name">
             </div> 
             <div class="form_section">
               <input type="text" placeholder="Correo electrónico*" id="user_email">
@@ -183,10 +184,10 @@
             </div>
              
              <select class="select" name="" id="razon_visita">
-               <option value="no_selection">Selecciona la razón de tu visita:</option>
-               <option value="consumo_propio">Es posible que mi consumo de alchol es problemático</option>
-               <option value="ser_querido">Un ser querido tiene problemas con el alchol</option>
-               <option value="otra">Otra</option>
+               <option class='option_text'value="no_selection">Selecciona la razón de tu visita:</option>
+               <option class='option_text'value="consumo_propio">Es posible que mi consumo de alchol es problemático</option>
+               <option class='option_text' value="ser_querido">Un ser querido tiene problemas con el alchol</option>
+               <option class='option_text' value="otra">Otra</option>
               </select>
              
              <button type="submit" class="btn-contact">ENVIAR</button>
@@ -206,7 +207,11 @@
         <p class="avioneta_2020"> @2020, Avioneta Prevención y Tratamiento, S.A. de C.V.</p>
       </div>
     </nav>
-</footer>
+  </footer>
+<div class="franja">
+  <p>contacto@avioneta.org</p>
+  <p>+1-415-326-4326</p>
+</div>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="script.js" defer></script>
 </body>

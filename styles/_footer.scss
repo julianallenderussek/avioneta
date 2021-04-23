@@ -3,7 +3,7 @@
 
 .main-footer {
   background: $white;
-  padding: 2rem;
+  padding: 20px 5px 0px 5px;
   background-color: $white;
   display: flex;
 }
@@ -24,21 +24,43 @@ footer nav {
 
 .container_aviso {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   color: $darkBlue;
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin: auto;
 }
 
 .aviso_privacidad {
   color: $lightBlue;
-  font-size: 0.75rem;
-  justify-self: flex-start;
+  font-size: 12px;
+  margin: auto
 }
 
 .avioneta_2020 {
   margin-right: 100px;
-  
+  flex: 2;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.franja {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  height: 50px;
+  background-color: $darkBlue;
+  margin: 0;
+  padding: 0;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.franja p {
+  margin: 5px;
 }
 

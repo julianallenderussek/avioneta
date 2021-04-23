@@ -2,7 +2,7 @@
 
 .seccion1_main_container {
   display: flex;
-  margin: 5vh 10vh 5vh 10vh ;
+  margin: 5vh 10vh 5vh 10vh;
   background: white;
 }
 
@@ -76,4 +76,28 @@ p {
 
 .bold {
   font-weight: bold;
+}
+
+@media (max-width: 650px) {
+  .img_couple {
+    -webkit-box-flex: 1;
+    /* flex: 1; */
+    background: url(../assets/Avio_WEB_Asset-08.png) no-repeat center;
+    background-size: 100%;
+    margin-right: 0;
+    height: 200px;
+  }
+
+  .seccion1_main_container {
+    flex-direction: column;
+  }
+
+  .vuelo {
+    font-size: 3rem;
+    background-color: $lightBlue;
+  }
+
+  .content_servicio {
+    font-size: 15px;
+  }
 }
